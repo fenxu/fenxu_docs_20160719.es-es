@@ -8,7 +8,6 @@
       "build_source_folder": "fenxu_docs_20160719",
       "build_output_subfolder": "fenxu_docs_20160719",
       "locale": "es-es",
-      "version": 0,
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
