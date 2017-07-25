@@ -2,13 +2,23 @@
   "build_entry_point": "docs",
   "need_generate_pdf": false,
   "need_generate_intellisense": false,
+  "branch_target_mapping": {
+		"live": ["Publish", "PDF"],
+		"master": ["Publish", "PDF"]
+		},
+  "Targets": {
+		"Pdf": {
+			"template_folder": "_themes.pdf"
+		}
+	},
+  "need_generate_pdf_url_template": true,
   "docsets_to_publish": [
     {
       "docset_name": "fenxu_docs_20160719",
       "build_source_folder": "fenxu_docs_20160719",
       "build_output_subfolder": "fenxu_docs_20160719",
       "locale": "es-es",
-      "open_to_public_contributors": true,
+      "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -37,6 +47,11 @@
         "live": "live",
         "master": "master"
       }
+    },
+    {
+      "path_to_root": "_themes.pdf",
+      "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
+      "branch": "master"
     }
   ],
   "need_generate_pdf_url_template": false
